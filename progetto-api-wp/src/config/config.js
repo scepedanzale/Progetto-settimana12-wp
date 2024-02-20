@@ -1,0 +1,1 @@
+export const url = 'http://localhost/IFOA/Progetto-settimana11-wp/wp/index.php/wp-json/wp/v2/';
