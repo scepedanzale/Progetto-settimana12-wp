@@ -15,7 +15,6 @@ export default function SearchComponent() {
     
     const handleChange = (e) => {
         setInput(e.target.value)
-        console.log(e.target.value)
     }
     
     const searchPosts = () => {
@@ -25,7 +24,6 @@ export default function SearchComponent() {
         .then(json => {
             setLoadingPosts(false)
             setPostsResults(json)
-            console.log(json)
         })
         .catch(error => {
             setLoadingPosts(false)
@@ -105,7 +103,7 @@ export default function SearchComponent() {
             <Row> 
                 {postsResult.length>0 && 
                 <>
-                    <h2 className='text-primary'>Post</h2>
+                    <h2 className='text-primary'>Posts</h2>
                     {postsResult.map(post => (
                         <Col xs={12} sm={6} md={4} key={post.id} className='my-3'>
                             <SinglePostComponent post={post}/>

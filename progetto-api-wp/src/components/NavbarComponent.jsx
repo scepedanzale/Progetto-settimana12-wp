@@ -17,7 +17,7 @@ export default function NavbarComponent() {
               <Link to="/posts" className='nav-link'>Posts</Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/users" className='nav-link'>Users</Link>
+              <Link to="/users" className='nav-link'>Utenti</Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

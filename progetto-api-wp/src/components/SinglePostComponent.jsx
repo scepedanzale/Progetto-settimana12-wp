@@ -8,7 +8,7 @@ export default function SinglePostComponent({post}) {
   return (
     <Card>
       <Card.Body>
-        <Card.Title>{post.title.rendered}</Card.Title>
+        <Card.Title dangerouslySetInnerHTML={{ __html: post.title.rendered}}/>
         <Card.Subtitle className="mb-2 text-muted">
             <span>{post.date.slice(0, 10)}</span>
         </Card.Subtitle>

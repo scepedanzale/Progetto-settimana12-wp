@@ -4,3 +4,7 @@
 img{
     max-width: 100%;
 }
+
+.user-row:hover{
+    background-color: #b6cae8 !important;
+}
