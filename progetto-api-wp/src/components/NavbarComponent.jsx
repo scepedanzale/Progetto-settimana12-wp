@@ -19,6 +19,9 @@ export default function NavbarComponent() {
             <Nav.Item>
               <Link to="/users" className='nav-link'>Utenti</Link>
             </Nav.Item>
+            <Nav.Item>
+              <Link to="/categories" className='nav-link'>Categorie</Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

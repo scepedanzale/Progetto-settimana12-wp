@@ -4,8 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import { Spinner, Alert, Container, Row, Col } from 'react-bootstrap';
 import SinglePostComponent from './SinglePostComponent';
 
-export default function UserPostsComponent() {
-
+export default function PostsCategoryComponent() {
+  
     const { id } = useParams()
     const { name } = useParams()
 
@@ -15,7 +15,7 @@ export default function UserPostsComponent() {
 
     useEffect(()=>{
         setLoading(true)
-        fetch(url + 'posts?author=' + id)
+        fetch(url + 'posts?categories=' + id)
         .then(response => response.json())
         .then(json=>{
             console.log(json)

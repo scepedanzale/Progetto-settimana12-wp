@@ -28,6 +28,7 @@ export default function UsersComponent() {
     <Container className='my-3'>
       
         <h1>Lista Utenti</h1>
+        <p className='text-secondary'>Numero di utenti: {users.length}</p>
         {loading && <Spinner animation="border" role="status">
             <span className="visually-hidden">Loading...</span>
         </Spinner>}
